@@ -1,6 +1,6 @@
 # In your browser:
 -	Create a github account
--	Send me an email with your github username so I can add you to our organisation discslab-dl-bench. 
+-	Send me an email with your github username so I can add you to our organisation [discslab-dl-bench](https://github.com/discslab-dl-bench). 
 
 # On the DGX-1:
 -	Generate a new SSH keypair by following the ‘Generating a new SSH key’ instructions. Don’t do the ‘Adding your SSH key to the ssh-agent’ part. https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
@@ -17,7 +17,7 @@ The easiest way for us to work on the code together will be for each of us to ha
 
 -	Go to `/dl-bench` and create a directory with your username
 
-In this directory, you can clone the repositories, esp. the traces and dlio which you will mainly be working on. 
+In this directory, you can clone the repositories, including the various workloads you may want to run, the traces and dlio. Get them from our organisation repository https://github.com/discslab-dl-bench
 
 The data for most the workloads is very large however and so we will share copies of them. You can find on `sdb1` mounted on `/raid`. The data for the various workloads is in `/raid/data`.
 
