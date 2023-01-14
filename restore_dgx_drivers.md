@@ -36,7 +36,14 @@ sudo cp /var/cuda-repo-ubuntu2004-12-0-local/cuda-*-keyring.gpg /usr/share/keyri
 sudo apt-get update
 sudo apt-get -y install cuda
 ```
-
 There were some errors related to public keys, but it worked out in the end!
+
+Finally, the purging had removed nvidia-docker, which is necessary to run the workloads in docker containers. I had to reinstall it using:
+
+```
+sudo apt install -y nvidia-docker2
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
 
 So don't be scared of purging all the drivers. 
